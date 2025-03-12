@@ -1,7 +1,7 @@
 /* Preset : Moderne */
 [data-theme="modern"] {
-    --primary-color: #2A2A2A;
-    --font-stack: "Inter", sans-serif;
+    --primary-color: #3498db;
+    --font-stack: "Roboto", sans-serif;
     --background-color: #FFFFFF;
     --button-color: #121212;
     --button-text-color: #FFFFFF;
@@ -9,8 +9,8 @@
   
   /* Preset : Élégant */
   [data-theme="elegant"] {
-    --primary-color: #5A3E36;
-    --font-stack: "Playfair Display", serif;
+    --primary-color: #2c3e50;
+    --font-stack: "Helvetica", serif;
     --background-color: #F5F5F5;
     --button-color: #5A3E36;
     --button-text-color: #FFFFFF;
