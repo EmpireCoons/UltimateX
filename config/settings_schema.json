@@ -1450,21 +1450,23 @@
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
       },
-      {
-        "name": "Presets",
-        "settings": [
-          {
-            "type": "select",
-            "id": "preset_style",
-            "label": "Style du thème",
-            "options": [
-              { "value": "modern", "label": "Moderne" },
-              { "value": "elegant", "label": "Élégant" }
-            ],
-            "default": "modern"
-          }
-        ]
-      }
+      
+        {
+          "name": "Presets",
+          "settings": [
+            {
+              "type": "select",
+              "id": "preset_style",
+              "label": "Style du thème",
+              "options": [
+                { "value": "modern", "label": "Moderne" },
+                { "value": "elegant", "label": "Élégant" }
+              ],
+              "default": "modern"
+            }
+          ]
+        },
+      
     ]
   }
 ]
