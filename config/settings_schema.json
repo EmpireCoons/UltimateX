@@ -1450,6 +1450,11 @@
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
       },
+      {"name": "t:settings_schema.cart.name",
+    "settings": [
+      //...autres paramètres du panier
+    ]
+  },
       
         {
           "name": "Presets",
