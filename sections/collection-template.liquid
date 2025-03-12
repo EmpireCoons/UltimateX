@@ -1,0 +1,31 @@
+<div class="collection">
+    <h1>{{ collection.title }}</h1>
+  
+    <!-- Filtres AJAX -->
+    <form data-filter-form>
+      {% for filter in collection.filters %}
+        <div>
+          <h3>{{ filter.label }}</h3>
+          {% for value in filter.values %}
+            <input 
+              type="checkbox" 
+              name="{{ value.param_name }}" 
+              id="{{ value.param_name }}" 
+              value="{{ value.value }}" 
+              {% if value.active %}checked{% endif %}
+            >
+            <label for="{{ value.param_name }}">{{ value.label }}</label>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </form>
+  
+    <!-- Grille de Produits -->
+    <div data-product-grid>
+      {% for product in collection.products %}
+        {% render 'product-card', product: product %}
+      {% endfor %}
+    </div>
+  </div>
+  
+  <script src="{{ 'ajax-filters.js' | asset_url }}" defer></script>
