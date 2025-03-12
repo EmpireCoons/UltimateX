@@ -1,8 +1,29 @@
-:root[data-theme="modern"] {
+/* Preset : Moderne */
+[data-theme="modern"] {
     --primary-color: #2A2A2A;
     --font-stack: "Inter", sans-serif;
+    --background-color: #FFFFFF;
+    --button-color: #121212;
+    --button-text-color: #FFFFFF;
   }
-  :root[data-theme="elegant"] {
+  
+  /* Preset : Élégant */
+  [data-theme="elegant"] {
     --primary-color: #5A3E36;
     --font-stack: "Playfair Display", serif;
+    --background-color: #F5F5F5;
+    --button-color: #5A3E36;
+    --button-text-color: #FFFFFF;
+  }
+  
+  /* Appliquer les variables CSS globales */
+  body {
+    color: var(--primary-color);
+    font-family: var(--font-stack);
+    background-color: var(--background-color);
+  }
+  
+  button {
+    background-color: var(--button-color);
+    color: var(--button-text-color);
   }
