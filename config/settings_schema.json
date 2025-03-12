@@ -1449,29 +1449,22 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
-      },
-      {"name": "t:settings_schema.cart.name",
-    "settings": [
-      //...autres paramètres du panier
+      }
     ]
   },
-      
-        {
-          "name": "Presets",
-          "settings": [
-            {
-              "type": "select",
-              "id": "preset_style",
-              "label": "Style du thème",
-              "options": [
-                { "value": "modern", "label": "Moderne" },
-                { "value": "elegant", "label": "Élégant" }
-              ],
-              "default": "modern"
-            }
-          ]
-        }
-      
+  {
+    "name": "Presets",
+    "settings": [
+      {
+        "type": "select",
+        "id": "preset_style",
+        "label": "Style du thème",
+        "options": [
+          { "value": "modern", "label": "Moderne" },
+          { "value": "elegant", "label": "Élégant" }
+        ],
+        "default": "modern"
+      }
     ]
   }
 ]
