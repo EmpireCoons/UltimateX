@@ -8,6 +8,42 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Style de thème",
+    "settings": [
+      {
+        "type": "select",
+        "id": "theme_style",
+        "label": "Style du thème",
+        "options": [
+          {
+            "value": "modern",
+            "label": "Moderne"
+          },
+          {
+            "value": "elegant",
+            "label": "Élégant"
+          }
+        ],
+        "default": "modern"
+      }
+    ]
+  },
+  {
+    "name": "Couleurs",
+    "settings": [
+      {
+        "type": "color",
+        "id": "primary_color",
+        "label": "Couleur principale"
+      },
+      {
+        "type": "color",
+        "id": "secondary_color",
+        "label": "Couleur secondaire"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
@@ -36,23 +72,7 @@
   {
     "name": "t:settings_schema.colors.name",
     "settings": [
-      {
-        "type": "select",
-        "id": "preset_style",
-        "label": "Style du thème",
-        "info": "Choisissez un style prédéfini pour votre thème.",
-        "options": [
-          {
-            "value": "modern",
-            "label": "Moderne"
-          },
-          {
-            "value": "elegant",
-            "label": "Élégant"
-          }
-        ],
-        "default": "modern"
-      },
+      
       {
         "type": "color_scheme_group",
         "id": "color_schemes",
