@@ -37,6 +37,23 @@
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
+        "type": "select",
+        "id": "preset_style",
+        "label": "Style du thème",
+        "info": "Choisissez un style prédéfini pour votre thème.",
+        "options": [
+          {
+            "value": "modern",
+            "label": "Moderne"
+          },
+          {
+            "value": "elegant",
+            "label": "Élégant"
+          }
+        ],
+        "default": "modern"
+      },
+      {
         "type": "color_scheme_group",
         "id": "color_schemes",
         "definition": [
@@ -1449,21 +1466,6 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
-      }
-    ]
-  },
-  {
-    "name": "Presets",
-    "settings": [
-      {
-        "type": "select",
-        "id": "preset_style",
-        "label": "Style du thème",
-        "options": [
-          { "value": "modern", "label": "Moderne" },
-          { "value": "elegant", "label": "Élégant" }
-        ],
-        "default": "modern"
       }
     ]
   }
